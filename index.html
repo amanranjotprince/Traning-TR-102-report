@@ -2,91 +2,108 @@
 <head>
 <title>Training-TR-102-Report</title>
 <style>
-    body{
-	    font-family:cursive;
-		margin:0px;
-		padding:0px;
-		background:url('https://t3.ftcdn.net/jpg/02/14/87/96/240_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg')no-repeat center center fixed;
-		background-size:cover;
+    *{
+	    margin:0;
+		padding:0;
+	}
+	body{
+		background:url('https://t3.ftcdn.net/jpg/02/14/87/96/240_F_214879686_R3HFJlk6WLr1kcdvy6Q9rtNASKN0BZBS.jpg')no-repeat center center/cover;
+		opacity:0.7;
+	}
+	#main{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        text-align:center;	
+        margin:30px;
+		height:555px;
+		border-radius:20px;
+        background-color:white;		
+	}
+    #main img{
+		height:100px;
+		width:100px;
+	}
+	#main h1{
+	    color:blue;
+		font-size:50px;
+		padding:10px;
+	}
+	#main p{
+	    font-size:30px;
+		padding:10px;
+	}
+	#main h2{
+	    font-size:40px;
+		padding:10px
+	}
+	#navbar{
+	}
+	#navbar a{
+	    padding:20px;
+	}
+	#btn{
+        padding: 5px 15px;
+        background-color: blue;
+        color: white;
+        margin: 5px;
+        font-size: 20px;
+        border-radius: 10px;
+        cursor:pointer;
+    }
+	#btn:hover{
+	    background-color:white;
+        color:black;
+	}
+	.web{
+	    display:flex;
+		font-size:30px;
+		text-decoration:none;
 		color:blue;
+		padding:20px;
 	}
-	.container {
-            width: 90%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.8);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
-    header {
-            display:inline;
-			width:100%;
-        }
-    header img {
-            height: 50px;
-        }
-    h1, h2, p{
-		    text-align:center;
+	@media screen and (max-width:1300px){
+	    #main{
+		    height:700px;
+			margin:600px 30px 10px 30px;
 		}
-    nav{
-	    text-align:center;
-		margin:bottom:20px;
-		
-	}
-	nav a {
-            display: inline-block;
-            margin: 5px;
-			border:2px solid #6a69f7;
-			text-decoration:none;
-			border-radius:5px;
-			text-align:center;
-          }
-	button{
-	     color:blue;
-		 cursor:pointer;
-		}
-        pro{
-		position:fixed;
-		right:0;
-		bottom:0;
 	}
 </style>
-<head>
+</head>
 <body>
-    <div class="container">
-	    <header>
-		    <a href="https://www.gndec.ac.in/" target="_blank">
-                <center><img src="https://srijansingh9.github.io/Training-102-Report/gndecLogo.png" alt="GNDEC Logo"></center>
-		    </a>	
-            <h1>Training TR-102 Report</h1>
-            <p>By Amandeep Kaur, URN 2203395 <br> Guru Nanak Dev Engineering College Ludhiana</p>
-            <h2>6 Week training</h2>
-        </header>
-		<nav>
-		    <a href="https://amanranjotprince.github.io/Traning-TR-102-report/10 June.pdf"><button type="button" class="btn btn-info">Day 1</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/11 june.pdf"><button type="button" class="btn btn-info">Day 2</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/12 june.pdf"><button type="button" class="btn btn-info">Day 3</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/13 June.pdf"><button type="button" class="btn btn-info">Day 4</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/14 june.pdf"><button type="button" class="btn btn-info">Day 5</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/15 june.pdf"><button type="button" class="btn btn-info">Day 6</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/17 june.pdf"><button type="button" class="btn btn-info">Day 7</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/18 june.pdf"><button type="button" class="btn btn-info">Day 8</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/19 june.pdf"><button type="button" class="btn btn-info">Day 9</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/20 june.pdf"><button type="button" class="btn btn-info">Day 10</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/21 june.pdf"><button type="button" class="btn btn-info">Day 11</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/24 june.pdf"><button type="button" class="btn btn-info">Day 12</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/25 june.pdf"><button type="button" class="btn btn-info">Day 13</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/26 june.pdf"><button type="button" class="btn btn-info">Day 14</button></a>
-            <a href="https://amanranjotprince.github.io/Traning-TR-102-report/27 june.pdf"><button type="button" class="btn btn-info">Day 15</button></a>
-	    <a href="https://amanranjotprince.github.io/Traning-TR-102-report/28 june.pdf"><button type="button" class="btn btn-info">Day 16</button></a>
-	    <a href="https://amanranjotprince.github.io/Traning-TR-102-report/1st july.pdf"><button type="button" class="btn btn-info">Day 17</button></a>
-	    <a href="https://amanranjotprince.github.io/Traning-TR-102-report/2 july.pdf"><button type="button" class="btn btn-info">Day 18</button></a>
-	    <a href="https://amanranjotprince.github.io/Traning-TR-102-report/3 july.pdf"><button type="button" class="btn btn-info">Day 19</button></a>
-	    <a href="https://amanranjotprince.github.io/Traning-TR-102-report/5 july.pdf"><button type="button" class="btn btn-info">Day 20</button></a>
-	    
+    <section id="main">
+	    <a href="https://www.gndec.ac.in" target="_blank">
+		    <img src="https://srijansingh9.github.io/Training-102-Report/gndecLogo.png" alt="GNDEC">
+		</a>
+		<h1>Training TR-102 Report</h1>
+        <p>By Amandeep Kaur, URN 2203395 <br> Guru Nanak Dev Engineering College Ludhiana</p>
+        <h2>6 Week training</h2>
+		<nav id="navbar">
+		    <a href=""><button id="btn">Day 1</button></a>
+		    <a href=""><button id="btn">Day 2</button></a>
+		    <a href=""><button id="btn">Day 3</button></a>
+		    <a href=""><button id="btn">Day 4</button></a>
+		    <a href=""><button id="btn">Day 5</button></a>
+		    <a href=""><button id="btn">Day 6</button></a>
+		    <a href=""><button id="btn">Day 7</button></a>
+		    <a href=""><button id="btn">Day 8</button></a><br>
+		    <a href=""><button id="btn">Day 9</button></a>
+		    <a href=""><button id="btn">Day 10</button></a>
+		    <a href=""><button id="btn">Day 11</button></a>
+		    <a href=""><button id="btn">Day 12</button></a>
+		    <a href=""><button id="btn">Day 13</button></a>
+		    <a href=""><button id="btn">Day 14</button></a>
+		    <a href=""><button id="btn">Day 15</button></a>
+		    <a href=""><button id="btn">Day 16</button></a><br>
+		    <a href=""><button id="btn">Day 17</button></a>
+		    <a href=""><button id="btn">Day 18</button></a>
+		    <a href=""><button id="btn">Day 19</button></a>
+		    <a href=""><button id="btn">Day 20</button></a>
+		    <a href=""><button id="btn">Day 21</button></a>
 		</nav>
-	    <div class="pro"> <a href="https://amanranjotprince.github.io/Traning-TR-102-report/my first web site.html" target="_blank">My Web Page!!!</a>
-	    </div>
-	</div>
+		<div class="web">
+		    <a href="https://amanranjotprince.github.io/Traning-TR-102-report/my first web site.html" target="_blank">My web pages!!!</a>
+		</div>
+	</section>
 </body>
 </html>
