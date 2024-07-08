@@ -1,0 +1,303 @@
+<html>
+	<head>
+		<title>My 3rd web site</title>
+		<style>
+		*{
+		    margin:0;
+			padding:0;
+			font-family:cursive;
+        }
+		html{
+		    scroll-behavior:smooth;
+		}
+		#navbar{
+		    position:sticky;
+		}
+		#navbar::before{
+		    content:"";
+			background-color:black;
+			position:absolute;
+			z-index:-1;
+			height:100%;
+			width:100%;
+			opacity:0.4;
+		}
+		#logo{
+		    display:flex;
+			align-items:center;
+		}
+		#logo img{
+		    width:50px;
+			height:50px;
+			}
+		#navbar ul{
+			display:flex;
+		}
+		#navbar ul li{
+		    list-style:none;
+			padding:20px;
+		}
+		#navbar ul li a{
+			border-radius:10px;
+			text-decoration:none;
+			color:white;
+			padding:5px;
+		}
+		#navbar ul li a:hover{
+			color:black;
+			background-color:white;
+		}
+		#home{
+		    display:flex;
+			flex-direction:column;
+			align-items:center;
+			justify-content:center;
+			height:500px;
+			padding:50px;
+		}
+		#home::before{
+		    content:"";
+			position:absolute;
+			background:url("https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")no-repeat center center/cover;
+			height: 642px;
+            top:0px;
+            left:0px;
+            width: 100%;
+            z-index: -1;
+            opacity:0.50;
+		}
+		#home h1{
+		    font-size:50px;
+			color:green;
+			text-align:center;
+		}
+		#home p{
+		    text-align:center;
+			font-size:20px;
+			color:#666018;
+		}
+		.btn{
+            padding: 6px 20px;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor:pointer;
+        }
+		.btn:hover{
+	        background-color:white;
+            color:black;			
+		}
+		#services{
+			padding:30px;
+			display:flex;
+		}
+		#services .box{
+		    border:2px solid black;
+			padding:20px;
+			margin:3px 6px;
+			border-radius:23px;
+			background-color:#e7e7e7;
+		}
+		#services .box img{
+		    height:120px;
+			margin:auto;
+			display:block;
+		}
+		#client-section{
+		   position:relative;
+		}
+		#client-section::before{
+            content: "";
+            position: absolute;
+            background: url('https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600')no-repeat center center/cover;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.2;
+        }
+		#clients{
+		    display:flex;
+			justify-content: center;
+            align-items: center;
+		}
+		#clients .client-item img{
+		    height:100px;
+			width:200px;
+			padding:10px;
+			margin:50px;
+		}
+		#contact{
+            position: relative;
+        }
+        #contact::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('https://images.pexels.com/photos/940302/pexels-photo-940302.jpeg?auto=compress&cs=tinysrgb&w=600') no-repeat center center/cover;
+        }
+        #contact-box{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+        #contact-box textarea, #contact-box input{
+            width: 100%;
+            padding: 10px;
+            border-radius: 9px;
+            font-size: 11px;
+			border:2px solid #c7c730;
+        }
+        #contact-box form{
+            width: 40%;
+        }
+        #contact-box label{
+           font-size: 25px;
+        }
+		footer{
+		    color:white;
+			background-color:black;
+		    padding:2px 8px;
+		}
+		.h-primary{
+            font-size:38px;
+            padding: 12px;
+        }
+        .h-secondary{
+            font-size:23px;
+            padding: 12px;
+        }
+        .center{
+            text-align: center;
+        }
+		.submit{
+		    color:black;
+			background-color:#eef1ac;
+			padding:2px;
+			margin:17px 220px;
+			font-size:20px;
+			border-radius:10px;
+			cursor:pointer;
+		}
+		.submit:hover{
+            background-color: brown;
+            color: white;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+		@media screen and (max-width:1300px){
+		#logo{
+	        flex-direction:column;
+        }
+
+        #services{
+          	flex-direction:column;
+        }
+        #services .box{
+          	margin:20px 10px;
+        }
+        #clients{
+	        flex-wrap:wrap;
+        }
+        #clients img{
+	        margin:2px;
+        }
+		}
+        </style>
+	</head>
+	<body>
+		<nav id="navbar">
+			<div id="logo">
+				<img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Delivery">
+					<ul>
+						<li class="item">
+							<a href="#">Home</a></li>
+						<li class="item">
+							<a href="#services-container">Services</a></li>
+						<li class="item">
+							<a href="#client-section"/>Our Clients</a></li>
+						<li class="item">
+							<a href="#contact">Contact Us</a></li>
+					</ul>
+			</div>
+		</nav>
+		<section id="home">
+		    <h1 class="h-primary"> WELCOME!!! TO MY MEAL</h1>
+			<P class="center">Food is mainly composed of water, lipids, proteins, and carbohydrates. Minerals (e.g., salts) and organic substances (e.g., vitamins) can also be found in food. Plants, algae, and some microorganisms use photosynthesis to make some of their own nutrients.</P>
+			<button class="btn">Order Now..</button>
+		</section>
+		<section id="services-container">
+		    <h1 class="h-primary center">Our Services</h1>
+			<div id="Services">
+			    <div class="box">
+				    <img src="https://images.pexels.com/photos/1639562/pexels-photo-1639562.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SORRY">
+					<h2 class="h-secondary center">Food ordering</h2>
+					<p class="center">Online food ordering is the process of ordering food, for delivery or pickup, from a website or other application. The product can be either ready-to-eat food or food that has not been specially prepared for direct consumption.</p>
+				</div>
+				<div class="box">
+				    <img src="https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&w=600" alt="SORRY">
+					<h2 class="h-secondary center">Food Catering</h2>
+					<p class="center">Online food ordering is the process of ordering food, for delivery or pickup, from a website or other application. The product can be either ready-to-eat food or food that has not been specially prepared for direct consumption.</p>
+				</div>
+				<div class="box">
+				    <img src="https://cdn.vectorstock.com/i/500p/70/35/scooter-delivery-silhouette-logo-template-vector-22657035.jpg" alt="SORRY">
+					<h2 class="h-secondary center">Bulk ordering</h2>
+					<p class="center">Online food ordering is the process of ordering food, for delivery or pickup, from a website or other application. The product can be either ready-to-eat food or food that has not been specially prepared for direct consumption.</p>
+				</div>
+			</div>
+		</section>
+		<section id="client-section">
+		    <h1 class="h-primary center">Our Clients</h1>
+			<div id="clients">
+			    <div class="client-item">
+				    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5DViD2QIZ7kjuu_AxigtaHdlWlRB3KAbNuA&s" alt="OUR CLIENT">
+				</div>
+				<div class="client-item">
+				    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG9YsB0UI_bx5hFJUz8pGmkq6aXP7Lj9CrmA&s" alt="OUR CLIENT">
+				</div>
+				<div class="client-item">
+				    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQm-k24V0hzVrYw0wh_dUHTWoW9Cqc2jHOZ_toxwz0NEk-N6HKeD_b4qi47xSQPYDjagF0&usqp=CAU" alt="OUR CLIENT">
+				</div>
+				<div class="client-item">
+				    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bxpo3VDa8otgRD-ts-wRvN5aq35wgu1qqg&s" alt="OUR CLIENT">
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+		<h1 class="h-primary center">Contact Us</h1>
+		<div id="contact-box">
+		    <form action="">
+			    <div class="form-group">
+				    <label for="name">Name:</label>
+					<input type="text" name="name" id="name" placeholder="Enter your name">
+				</div>
+				<div class="form-group">
+				    <label for="email">Email:</label>
+					<input type="text" name="name" id="email" placeholder="abc@gmail.com">
+				</div>
+				<div class="form-group">
+				    <label for="no">Phone No:</label>
+					<input type="no" name="name" id="no" placeholder="9876543210">
+				</div>
+				<div class="form-group">
+				    <label for="message">Message:</label>
+					<textarea name="message" id="message" cols="33" rows="3" placeholder="hi!!!"></textarea>
+				</div>
+				<div class="form-group">
+				    <button class="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+		</section>
+		<footer>
+		    <div class="center">
+			    copyright &copy;www.my 3rd web site.com All right reserved!
+			</div>
+		</footer>
+	</body>
+</html>
