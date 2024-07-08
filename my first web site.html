@@ -1,19 +1,17 @@
 <html>
-<head>
-<title>My First Web Site</title>
-<style>   
+	<head>
+		<title>My First Web Site</title>
+		<style>   
     body
 	{
-	    background-image:url("https://images.ctfassets.net/0k812o62ndtw/kOozcyS9Qi9DCwrfoEWfM/40cdd85bdf0711fd2d3de3e84b32fd50/BackToGymSWEATf1f07a7f6f79e7b8807d2436a6ae8e8b.jpg");
-		background-repeat:no-repeat;
-		background-size:100% 100%;
+	    background:url("https://images.pexels.com/photos/949132/pexels-photo-949132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")no-repeat center center/cover;
 		margin:0px;
 		padding:0px;
         font-family:cursive;
 
 	}
 	.left{
-	    border:2px solid black;
+	    border:2px solid gray;
 		border-bottom-right-radius:10px;
 		border-bottom-left-radius:10px;
 		display:inline-block;
@@ -21,19 +19,19 @@
 		left:30px;
 		top:20px;
 		text-align:center;
+		color:white;
 	}
 	.left img{
 	    width:100px;
 		height:50px;
-		
 		}
 	.mid{
-	    border:2px solid black;
+	    border:2px solid gray;
 		border-radius:50px;
 		display:block;
 		width:50%;
 		margin:20px auto;
-		background-color:#f7ede1;
+		background-color:#bdbab8;
 	}
 	.nav li{
 	    display:inline-block;
@@ -48,7 +46,6 @@
 		color:red;
 	}
 	.right{
-	
 		display:inline-block;
 		position:absolute;
 		right:30px;
@@ -56,7 +53,6 @@
 	}
 	.btn{
 	    cursor:pointer;
-		
 		}
     .btn:hover{
 	    background-color:#f7ede1;
@@ -77,57 +73,87 @@
 	   bottom:10px;
 	   background-color:gray;
 	}
+	.position input{
+	   width:100%;
+	}
 	.web{
 	    text-decoration:none;
 		position:fixed;
-		left:0;
-		bottom:0;
+		left:20px;
+		bottom:20px;
 		color:black;
 		border:2px solid black;
+		border-radius:10px;
 		box-shadow:5px -5px gray;
 		background-color: #f5f5dc;
 		text-shadow:2px 2px #8d4a4a80;
+		font-size:40px;
 		}
 	.web:hover{
 	    background-color:gray;
 		}
+	@media screen and (max-width:1300px){
+	    .form{
+		    display:flex;
+			flex-direction:column;
+			margin:150px 100px;
+		}
+		.left{
+		    font-size:40px;
+			margin:71px 12px;
+		}
+		.nav{
+		    font-size:40px;
+			display:flex;
+			flex-direction:column;
+		}
+		.right{
+		    margin:90px 12px;
+		}
+		.position{
+		    font-size:30px;
+		}
+	}
 </style>
-<head>
-<body>
-    <header class="header">
-	    <div class="left">
-		    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtr9zy37VO9GDZnF6l7eDXf_TQKB0pfe7dDQ&ss">
-			<div> AMAN </div>
-		</div>
-		<div class="mid">
-	    <ul class="nav">
-		    <li><a href="#" class="active">Home</a></li>
-			<li><a href="#">About Us</a></li>
-			<li><a href="#">Fitness Calculator</a></li>
-			<li><a href="#">Contant Me</a></li>
-		</ul>
-        </div>
-        <div class="right">
-		    <button class="btn">Any Issue</button>
-		<div><br>
-		    <button class="btn">Email Me</button>
-		</div>	
-		</div>
-	</header>
-	<form class="form">
-	    <h3>LOGIN IN</h3>
-		<div><label for="ID">ID:</label><br>
-		<input type:"text" id="ID" placeholder="abc@gmail.com">
-		</div>
-		<div>
-		<label for="Password">Password:</label><br>
-		<input type:"text" id="Password" placeholder="your password">
-		</div>
-	</form>
-	<p class="position">
-	   Lets chat with me!!!<br>
-	   <input type="address" placeholder="......">
-	   </p>
-	<a class="web" href="https://amanranjotprince.github.io/Traning-TR-102-report/my 2nd web site.html">MY 2nd web site...</a>
-</body>
-<html>
+		<head>
+			<body>
+			<header class="header">
+			<div class="left">
+			    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtr9zy37VO9GDZnF6l7eDXf_TQKB0pfe7dDQ&ss">
+			    <div> AMAN </div>
+			</div>
+		    <div class="mid">
+				<ul class="nav">
+					<li><a href="#" class="active">Home</a></li>
+					<li><a href="#">About Us</a></li>
+			        <li><a href="#">Fitness Calculator</a></li>
+					<li><a href="#">Contant Me</a></li>
+				</ul>
+			</div>
+			<div class="right">
+				<button class="btn">Any Issue</button>
+			    <div>
+			        <br>
+			        <button class="btn">Email Me</button>
+			    </div>
+			</div>
+		    </header>
+			<form class="form">
+			    <h3>LOGIN IN</h3>
+				<div>
+				    <label for="ID">ID:</label>
+					<br>
+		 		    <input type:"text" id="ID" placeholder="abc@gmail.com">
+		        </div>
+			    <div>
+		            <label for="Password">Password:</label>
+					<br>
+					<input type:"text" id="Password" placeholder="your password">
+		        </div>
+			</form>
+			<p class="position">Lets chat with me!!!<br>
+			    <input type="address" placeholder="......">
+	        </p>
+			<a class="web" href="https://amanranjotprince.github.io/Traning-TR-102-report/my 2nd web site.html">MY 2nd web site...</a>
+		</body>
+</html>
