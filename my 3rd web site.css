@@ -204,3 +204,18 @@
 	        margin:2px;
         }
 		}
+.web{
+	    text-decoration:none;
+		position:fixed;
+		left:20px;
+		bottom:20px;
+		color:black;
+		border:2px solid black;
+		box-shadow:5px -5px gray;
+		background-color: #f5f5dc;
+		text-shadow:2px 2px #8d4a4a80;
+		font-size:20px;
+		}
+	.web:hover{
+	    background-color:gray;
+		}
