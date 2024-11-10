@@ -1,0 +1,190 @@
+<html>
+<head>
+<title>
+SIGN IN
+</title>
+<style>
+    *{
+	    margin:0;
+		box-sizing:border-box;
+		font-family:cursive;
+	}
+	body{
+	    background:url('https://images.unsplash.com/photo-1547444196-2ea3ce201cc6?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bG9naW4lMjBwYWdlfGVufDB8fDB8fHww')no-repeat center center/cover;
+		}
+		z-index:-1;
+/* navbar */
+		#navbar{
+		    position:sticky;
+		}
+		#navbar::before{
+		    content:"";
+			background-color:black;
+			position:absolute;
+			z-index:-1;
+			height:100%;
+			width:100%;
+			opacity:0.4;
+		}
+		#logo{
+		    display:flex;
+			align-items:center;
+		}
+		#logo img{
+		    width:50px;
+			height:50px;
+			}
+		#navbar ul{
+			display:flex;
+		}
+		#navbar ul li{
+		    list-style:none;
+			padding:20px;
+		}
+		#navbar ul li a{
+			border-radius:10px;
+			text-decoration:none;
+			color:white;
+			padding:5px;
+		}
+		#navbar ul li a:hover{
+			color:#0d2abe;
+			background-color:white;
+		}
+	/*sign in*/
+	    section{
+		    margin:50px 0px 0px 500px;
+		}
+	    .glass{
+		    width:300px;
+			height:350px;
+			position:relative;
+			z-index:1;
+			background:rgba(255,255,255,0.1);
+			box-shadow:0 4px 6px rgba(0,0,0,0.1);
+			border-radius:10px;
+			border:1px solid black;
+			
+		}
+		.glass::before{
+		    content:'';
+			position:absolute;
+			width:100%;
+			height:100%;
+			border-radius:10px;
+			backdrop-filter:blur(5px);
+			z-index:-1;
+		}
+		.login{
+		    max-width:250px;
+			margin:0 auto;
+			text-align:center;
+		}
+		h2{
+		    color:blue;
+			margin:top:30px;
+			margin:bottom:-20px;
+		}
+		form{
+		    display:flex;
+			flex-direction:column;
+			margin-top:20px;
+		}
+		input{
+		    padding:10px;
+			margin-top:25px;
+			border:none;
+			border-radius:10px;
+			background:transparent;
+			border:1px solid black;
+			color:black;
+			font-size:13px;
+		}
+		input::placeholder{
+		    color:blue;
+		}
+		.options{
+		    display:flex;
+			align-items:center;
+			margin-top:15px;
+			font-size:12px;
+			color:black;
+		}
+		.options input{
+		    margin-right:5px;
+			margin-top:0px;
+		}
+		.options a{
+		    text-decoration:none;
+			color:black;
+			margin-left:auto;
+		}
+		button{
+		    background:white;
+			color:black;
+			padding:10px;
+			border:none;
+			border-radius:10px;
+			cursor:pointer;
+			margin-top:15px;
+		}
+		button:hover{
+		    background:transparent;
+			color:white;
+			outline:1px solid #fff;
+		}
+		p{
+		    font-size:12px;
+			color:#fff;
+			margin-top:15px;
+		}
+		#register{
+		    text-decoration:none;
+			color:#fff;
+			font-weight:bold;
+			
+		}
+</style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+		<div id="logo">
+			<img src="https://thumbs.dreamstime.com/b/logo-travel-agency-airplane-sky-blue-color-modern-illustration-logo-travel-agency-airplane-sky-blue-315822425.jpg" alt="logo">
+			<ul>
+			    <li class="item">
+					<a href="PROJECT.html">Home</a></li>
+				<li class="item">
+					<a href="travelpakages.html">Travel Packages</a></li>
+				<li class="item">
+					<a href="location.html"/>Location</a></li>
+				<li class="item">
+					<a href="LetsGO.html">Top Attraction</a></li>
+				<li class="item">
+				    <a href="signIN.html">Login</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+
+<!-- sign in -->
+<section>
+    <div class="glass">
+	    <div class="login">
+		    <h2>Login</h2>
+			<form action="#">
+			    <input type="text" id="username" name="username" required placeholder="Username">
+				<input type="password" id="password" name="password" required placeholder="Password">
+				<div class="options">
+				    <input type="checkbox" id="remember" name="remember">
+					<label for ="remember">Remember me</label>
+					<a href="signIN.html">Forgot password?</a>
+				</div>
+				<button type="submit">Login</button>
+				<p>Don't have any account?<a href="signUP.html" id="register">Register</a></p>
+			</form>
+		</div>
+	</div>
+</section>
+</body>
+</html>
