@@ -1,0 +1,325 @@
+<html>
+<head>
+<title>Locations</title>
+        <!-- iocns -->
+		<link rel="Stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		
+<style>
+
+html{
+		    scroll-behavior:smooth;
+		}
+
+/* main */
+        *{
+		    margin:0;
+			padding:0;
+			font-family:cursive;
+        }
+		html{
+		    scroll-behavior:smooth;
+		}
+		.h-primary{
+            font-size:38px;
+            padding: 12px;
+        }
+        .h-secondary{
+            font-size:23px;
+            padding: 12px;
+        }
+        .center{
+            text-align: center;
+        }
+
+/* navbar */
+		#navbar{
+		    position:sticky;
+		}
+		#navbar::before{
+		    content:"";
+			background-color:black;
+			position:absolute;
+			z-index:-1;
+			height:100%;
+			width:100%;
+			opacity:0.4;
+		}
+		#logo{
+		    display:flex;
+			align-items:center;
+		}
+		#logo img{
+		    width:50px;
+			height:50px;
+			}
+		#navbar ul{
+			display:flex;
+		}
+		#navbar ul li{
+		    list-style:none;
+			padding:20px;
+		}
+		#navbar ul li a{
+			border-radius:10px;
+			text-decoration:none;
+			color:white;
+			padding:5px;
+		}
+		#navbar ul li a:hover{
+			color:#0d2abe;
+			background-color:white;
+		}
+
+/* location */
+        #sectvisit{
+		    background:url('https://images.unsplash.com/photo-1680214181560-0374f958586f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRyYXZlbCUyMGFnZW5jeXxlbnwwfHwwfHx8MA%3D%3D')no-repeat center center/cover;
+		}
+		
+        section h2{
+		    color:blue;
+			text-align:center;
+		}
+		
+		section #loct{
+		display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+			
+		}
+		section #img{
+		    margin:10px;
+			padding:20px;
+		}
+		section img:hover{
+		    height:183px;
+		}
+		
+		section #sectdest{
+		    
+		}
+		section #name{
+		    display:flex;
+			flex-diraction:row;
+			flex-warp:warp;
+			align-content:center;
+			justify-content:center;
+			align-items:center;
+			margin:20px;
+		}
+		
+		section #name li{
+		    text-decoration:none;
+			padding:5px;
+		}
+		section #name li a{
+		    text-decoration:none;
+			color: black;
+		}
+		section .sectclass{
+		    padding:20px 150px 20px 40px;
+		}
+		section #name li a:hover{
+		    color:blue;
+			padding-left:5px;
+		}
+/* footer */
+		.footer-section{
+		    color:white;
+			background-color:24262b;
+		    padding:2px 8px;
+		}
+		.rows{
+			display:flex;
+			flex-wrap:wrap;
+		}
+		.column{
+            padding: 10px 60px 5px 90px;
+		}
+		.column h4{
+			font-size:18px;
+			color:#ffffff;
+			text-transform:capitalize;
+			margin-bottom:30px;
+			font-weight:500px;
+			position:relative;
+		}
+		.column h4::before{
+			content:'';
+			position:absolute;
+			left:0;
+			bottom:-10px;
+			background-color:#0d2abe;
+			height:2px;
+			box-sizing:border-box;
+			width:50px;
+		}
+		.column ul li:not(:last-child){
+			margin-bottom:10px;
+		}
+		.column ul li{
+			list-style:none;
+		}
+		.column ul li a{
+			font-size:16px;
+			text-transform:capitalize;
+			text-decoration:none;
+			font-weight:300;
+			color:#bbbbbb;
+			display:block;
+			transition:all 0.3s ease;
+		}
+		.column ul li a:hover{
+			color:#ffffff;
+			padding-left:8px;
+		}
+		.column .social a{
+			display:inline-block;
+			height:40px;
+			width:40px;
+			background-color:rgba(255,255,255,0.2);
+			margin:0 10px 10px 0;
+			padding: 15px 5px 0px 5px;
+			text-align:center;
+			line-height:40px;
+			border-radius:50%;
+			color:#ffffff;
+			transition:all 0.5s ease;
+		}
+		.column .social a:hover{
+			color:#24262b;
+			background-color:#ffffff;
+		}
+		.column p{
+			color:#bbbbbb;
+		}
+		.column p:hover{
+			color:#ffffff;
+			
+		}
+		
+</style>
+</head>
+<body>
+    <nav id="navbar">
+			<div id="logo">
+				<img src="https://thumbs.dreamstime.com/b/logo-travel-agency-airplane-sky-blue-color-modern-illustration-logo-travel-agency-airplane-sky-blue-315822425.jpg" alt="logo">
+					<ul>
+						<li class="item">
+							<a href="PROJECT.html">Home</a></li>
+						<li class="item">
+							<a href="travelpakages.html">Travel Packages</a></li>
+						<li class="item">
+							<a href="location.html"/>Location</a></li>
+						<li class="item">
+							<a href="LetsGO.html">Top Attraction</a></li>
+						<li class="item">
+						    <a href="signIn.html">Login</a></li>
+						
+					</ul>
+			</div>
+		</nav>
+		
+		<section>
+		    <div id="sectvisit">
+						<!-- THIS IS HEADing -->
+			    <h2>Best Places to Visit in the World</h2>
+			<div id="loct">
+				<!-- IMAGES -->
+				<div id="img">
+				<img src="https://static.tourtravelworld.com/images/travel-guide/travel_guide_africa.jpg" alt="SORRY">
+				<h3>Africa Travel Guide</h3>
+				</div>
+				
+				<div id="img">
+				<img src="https://static.tourtravelworld.com/images/travel-guide/travel_guide_asia.jpg" alt="SORRY">
+				<h3>Asia Travel Guide</h3>
+				</div>
+				
+				<div id="img">
+				<img src="https://static.tourtravelworld.com/images/travel-guide/travel_guide_europe.jpg" alt="SORRY">
+				<h3>Europe Travel Guide</h3>
+				</div>
+				
+				<div id="img">
+				<img src="https://static.tourtravelworld.com/images/travel-guide/travel_guide_north_ame.jpg" alt="SORRY">
+				<h3>North America Travel Guide</h3>
+				</div>
+				
+				<div id="img">
+				<img src="https://static.tourtravelworld.com/images/travel-guide/travel_guide_south_ame.jpg" alt="SORRY">
+				<h3>South America Travel Guide</h3>
+				</div>
+				
+				<div id="img">
+				<img src="https://static.tourtravelworld.com/images/travel-guide/travel_guide_oceania.jpg" alt="SORRY">
+				<h3>Oceania Travel Guide</h3>
+				</div>
+				
+			</div>
+			</div>
+			<div id="sectdest">
+			    <h2>Top Tourist Destinations in the World</h2>
+			<div id="name">
+			    <div class="sectclass"><li><a href="LetsGO.html">DUBAI</a></li>
+				<li><a href="LetsGO.html">INDONESIA</a></li>
+				<li><a href="LetsGO.html">CANADA</a></li></div>
+				<div class="sectclass"><li><a href="LetsGO.html">SRI LANKA</a></li>
+				<li><a href="LetsGO.html">INDIA</a></li>
+				<li><a href="LetsGO.html">NEW YARK</a></li></div>
+				<div class="sectclass"><li><a href="LetsGO.html">SINGAPORE</a></li>
+				<li><a href="LetsGO.html">LONDON</a></li>
+				<li><a href="LetsGO.html">ROME</a></li></div>
+				<div class="sectclass"><li><a href="LetsGO.html">FRANCE</a></li>
+				<li><a href="LetsGO.html">BANGKOK</a></li>
+				<li><a href="LetsGO.html">PARIS</a></li></div>
+				
+			</div>
+			</div>
+		</section>
+		
+		<!-- footer -->
+		<footer class="footer-section">
+		    <div class="footer">
+			    <div class="rows">
+				    <div class="column">
+					    <h4>About the Site</h4>
+						<ul>
+						    <li><a href="travelpakages.html">Travel Packages</a></li>
+						    <li><a href="location.html">Locations</a></li>
+						    <li><a href="LetsGO.html">Top Attractions</a></li>
+						    
+						</ul>
+					</div>
+					<div class="column">
+					    <h4>Get Help</h4>
+						<ul>
+						    <li><a href="signUP.html">Contact Us</a></li>
+						    <li><a href="signIN.html">Sign in</a></li>
+						    <li><a href="">Log Out</a></li>
+						</ul>
+					</div>
+					<div class="column">
+					    <h4>Follow Us</h4>
+						<ul class="social">
+						    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+						    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+						    <a href="https://inkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						</ul>
+					</div>
+					<div class="column">
+					    <h4>Designed by</h4>
+						<p>Amandeep Kaur (2203395)</p>
+						<p>Aashima (2203398)</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-section">
+			    <p class="center">@copyright All Right Reserved!!! www.PROJECT.com</p>
+			</div>
+		</footer>
+</body>
+</html>
