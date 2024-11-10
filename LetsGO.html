@@ -1,0 +1,279 @@
+<html>
+<head>
+<title>LETS GO...</title>
+    <!-- linking footer -->
+    <link rel="stylesheet" href="PROJECT.css">
+	<!-- icons -->
+    <link rel="Stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<style>
+    <!-- internal css -->
+	
+        html{
+		    scroll-behavior:smooth;
+		}
+
+/* main */
+        *{
+		    margin:0;
+			padding:0;
+			font-family:cursive;
+        }
+		html{
+		    scroll-behavior:smooth;
+		}
+		.h-primary{
+            font-size:38px;
+            padding: 12px;
+        }
+        .h-secondary{
+            font-size:23px;
+            padding: 12px;
+        }
+        .center{
+            text-align: center;
+        }
+		
+/*section*/
+		section::before{
+		    content:"";
+			position:absolute;
+			background:url('https://images.unsplash.com/photo-1675154134079-4a71dd46635c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHJhdmVsJTIwYWdlbmN5fGVufDB8fDB8fHww')no-repeat center center/cover;
+			height: 2000px;
+            top:0px;
+            left:0px;
+			width:100%;
+            z-index: -1;
+            opacity:0.50;
+		}
+        h2{
+		    color:blue;
+			text-align:center;
+			cursor:pointer;
+		}
+		h2:hover{
+		    color:black;
+		}
+		#card{
+		    display:flex;
+			flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+		}
+		.cards{
+		    margin: 25px 25px 25px 60px;
+            padding: 0px 0px 5px 0px;
+            border: 2px solid black;
+            border-radius: 60px 60px 0px 0px
+		}
+		.cards img{
+		    border-radius:60px 60px 0px 0px;
+			
+		}
+		
+		.cards h4{
+		    cursor:pointer;
+			text-align:center;
+		}
+		.cards h4:hover{
+		    color:blue;
+			padding-left:9px;
+		}
+
+/* navbar */
+		#navbar{
+		    position:sticky;
+		}
+		#navbar::before{
+		    content:"";
+			background-color:black;
+			position:absolute;
+			z-index:-1;
+			height:100%;
+			width:100%;
+			opacity:0.4;
+		}
+		#logo{
+		    display:flex;
+			align-items:center;
+		}
+		#logo img{
+		    width:50px;
+			height:50px;
+			}
+		#navbar ul{
+			display:flex;
+		}
+		#navbar ul li{
+		    list-style:none;
+			padding:20px;
+		}
+		#navbar ul li a{
+			border-radius:10px;
+			text-decoration:none;
+			color:white;
+			padding:5px;
+		}
+		#navbar ul li a:hover{
+			color:#0d2abe;
+			background-color:white;
+		}
+
+
+</style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+		<div id="logo">
+			<img src="https://thumbs.dreamstime.com/b/logo-travel-agency-airplane-sky-blue-color-modern-illustration-logo-travel-agency-airplane-sky-blue-315822425.jpg" alt="logo">
+			<ul>
+			    <li class="item">
+					<a href="PROJECT.html">Home</a></li>
+				<li class="item">
+					<a href="travelpakages.html">Travel Packages</a></li>
+				<li class="item">
+					<a href="location.html"/>Location</a></li>
+				<li class="item">
+					<a href="LetsGo.html">Top Attraction</a></li>
+				<li class="item">
+				    <a href="signIN.html">Login</a></li>
+				
+			</ul>
+		</div>
+	</nav>
+    <!-- LETS GO -->
+	<section id ="sectionid">
+	    <h2>Lets Go...</h2>
+		<div id="card">
+	    <div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/rishikesh.jpg">
+			<h4>RISHIKESH</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/munnar.jpg">
+			<h4>MUNNAR</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/manali.jpg">
+			<h4>MANALI</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/leh.jpg">
+			<h4>LEH & LADAKH</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/delhi.jpg">
+			<h4>DELHI</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/malaysia.jpg">
+			<h4>MALAYSIA</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/jodhpur.jpg">
+			<h4>JODHPUR</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/jaipur.jpg">
+			<h4>JAIPUR</h4>
+		</div><div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/goa.jpg">
+			<h4>GOA</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/kerala.jpg">
+			<h4>KERALA</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/dubai.jpg">
+			<h4>DUBAI</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/shimla.jpg">
+			<h4>SHIMLA</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/srinagar.jpg">
+			<h4>SRINAGAR</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/rajasthan.jpg">
+			<h4>RAJASTHAN</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/singapore.jpg">
+			<h4>SINGAPORE</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/kathmandu.jpg">
+			<h4>KATHMANDU</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/udaipur.jpg">
+			<h4>UDAIPUR</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/andaman-nicobar-islands.jpg">
+			<h4>ANDAMAN NICOBAR</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/kathmandu.jpg">
+			<h4>KATHMANDU</h4>
+		</div>
+		<div class="cards">
+		    <img src="https://static.tourtravelworld.com/images/best-places-world/rishikesh.jpg">
+			<h4>RISHIKESH</h4>
+		</div>
+		</div>
+	</section>
+
+
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer-section">
+	    <div class="footer">
+			<div class="rows">
+				<div class="column">
+					<h4>About the Site</h4>
+				    <ul>
+					    <li><a href="travelpakages.html">Travel Packages</a></li>
+						<li><a href="location.html">Locations</a></li>
+						<li><a href="LetsGO.html">Top Attractions</a></li>
+						
+					</ul>
+				</div>
+				<div class="column">
+					<h4>Get Help</h4>
+					<ul>
+						<li><a href="signIN.html">Contact Us</a></li>
+						<li><a href="signUP.html">Sign in</a></li>
+						<li><a href="PROJECT.html">Log Out</a></li>
+					</ul>
+				</div>
+				<div class="column">
+					<h4>Follow Us</h4>
+					<ul class="social">
+						<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						<a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+						<a href="https://inkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					</ul>
+				</div>
+			    <div class="column">
+					<h4>Designed by</h4>
+				    <p>Amandeep Kaur (2203395)</p>
+				    <p>Aashima (2203398)</p>
+				</div>
+			</div>
+		</div>
+		<div class="footer-section">
+			<p class="center">@copyright All Right Reserved!!! www.PROJECT.com</p>
+		</div>
+	</footer>
+
+</body>
+</html>
