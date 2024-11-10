@@ -1,0 +1,281 @@
+<html>
+<head>
+    <!-- icons -->
+	<link rel="Stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+		
+    <title>Travel Packages</title>
+
+    <style>
+/* main */
+        *{
+		    margin:0;
+			padding:0;
+			font-family:cursive;
+			
+		}
+		html{
+		    scroll-behavior:smooth;
+		}
+		.h-primary{
+            font-size:38px;
+            padding: 12px;
+        }
+        .h-secondary{
+            font-size:23px;
+            padding: 12px;
+        }
+        .center{
+            text-align: center;
+        }
+		
+/* navbar */
+		#navbar{
+		    position:sticky;
+		}
+		
+		#logo{
+		    display:flex;
+			align-items:center;
+		}
+		#logo img{
+		    width:50px;
+			height:50px;
+			}
+		#navbar ul{
+			display:flex;
+		}
+		#navbar ul li{
+		    list-style:none;
+			padding:20px;
+		}
+		#navbar ul li a{
+			border-radius:10px;
+			text-decoration:none;
+			color:white;
+			padding:5px;
+		}
+		#navbar ul li a:hover{
+			color:#0d2abe;
+			background-color:white;
+		}
+	
+        #navbar{
+		    display:flex;
+			background-color:gray;
+			height:100px;
+		}
+		.tour:before{
+		    content:"";
+			position:absolute;
+			background:url('https://images.unsplash.com/photo-1530789253388-582c481c54b0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8VFJBVkVMJTIwQUdFVHxlbnwwfHwwfHx8MA%3D%3D')no-repeat center center/cover;
+			height: 642px;
+            top:0px;
+            left:0px;
+            width: 100%;
+            z-index: -1;
+            opacity:0.50;
+		}
+		
+		form{
+		    display:flex;
+		    justify-content: center;
+            align-items: center;
+		
+		}
+		#button{
+            padding: 6px 20px;
+            background-color:#0d2abe;
+            color: white;
+            margin: 17px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor:pointer;
+        }
+		#button:hover{
+	        background-color:white;
+            color:black;			
+		}
+		
+		
+		.tour #heading{
+		    display:flex;
+			color:blue;
+			justify-content:center;
+		} 
+		.tour #para{
+		    padding:12px;
+		}
+		
+/*footer section*/
+		.footer-section{
+		    color:white;
+			background-color:24262b;
+		    padding:2px 8px;
+		}
+		.rows{
+			display:flex;
+			flex-wrap:wrap;
+		}
+		.column{
+            padding: 10px 60px 5px 90px;
+		}
+		.column h4{
+			font-size:18px;
+			color:#ffffff;
+			text-transform:capitalize;
+			margin-bottom:30px;
+			font-weight:500px;
+			position:relative;
+		}
+		.column h4::before{
+			content:'';
+			position:absolute;
+			left:0;
+			bottom:-10px;
+			background-color:#0d2abe;
+			height:2px;
+			box-sizing:border-box;
+			width:50px;
+		}
+		.column ul li:not(:last-child){
+			margin-bottom:10px;
+		}
+		.column ul li{
+			list-style:none;
+		}
+		.column ul li a{
+			font-size:16px;
+			text-transform:capitalize;
+			text-decoration:none;
+			font-weight:300;
+			color:#bbbbbb;
+			display:block;
+			transition:all 0.3s ease;
+		}
+		.column ul li a:hover{
+			color:#ffffff;
+			padding-left:8px;
+		}
+		.column .social a{
+			display:inline-block;
+			height:40px;
+			width:40px;
+			background-color:rgba(255,255,255,0.2);
+			margin:0 10px 10px 0;
+			padding: 15px 5px 0px 5px;
+			text-align:center;
+			line-height:40px;
+			border-radius:50%;
+			color:#ffffff;
+			transition:all 0.5s ease;
+		}
+		.column .social a:hover{
+			color:#24262b;
+			background-color:#ffffff;
+		}
+		.column p{
+			color:#bbbbbb;
+		}
+		.column p:hover{
+			color:#ffffff;
+			
+		}
+	</style>
+</head>
+<body>
+<!-- navbar -->
+    <nav id="navbar">
+			<div id="logo">
+				<img src="https://thumbs.dreamstime.com/b/logo-travel-agency-airplane-sky-blue-color-modern-illustration-logo-travel-agency-airplane-sky-blue-315822425.jpg" alt="logo">
+					<ul>
+						<li class="item">
+							<a href="PROJECT.html">Home</a></li>
+						<li class="item">
+							<a href="travelpakages.html">Travel Packages</a></li>
+						<li class="item">
+							<a href="location.html"/>Location</a></li>
+						<li class="item">
+							<a href="LetsGO.html">Top Attraction</a></li>
+						<li class="item">
+						    <a href="signIN.html">Login</a></li>
+					</ul>
+			</div>
+		</nav>
+		
+		<br>
+		<section id="traveling">
+		    <div id = "form">
+			    <form>
+				    <label for ="tour"><h3>Tour Packages</h3></label>
+					<input type="text" name="tour" placeholder="Eg.Dubai, Canada, etc.">
+					<input type="submit" id = "button" value="submit">
+					
+				</form>
+			</div>
+		</section>
+		<section class = "tour">
+		    <div>
+			    <h2 id ="heading"> TOUR TRAVELLING...</h2>
+				<p id ="para">Traveling lets you break free from the monotonous routine of life and relax your mind, body, and soul. And none can be a better companion while traveling than tour packages customized to meet all your needs. Travel Packages allow you to explore the beauty of your dream destination in a well-planned and hassle-free manner. When you book a Tour Package from us, you can rest assured about your accommodation, transportation, sightseeing, and other planning and arrangements.</p>
+				
+				<p id ="para">
+				Whether you are planning a holiday in India or an international tour, booking Holiday Packages from this travel portal is the most beautiful way to explore your holiday destination. You can find tour packages for India to discover the treasure chest of beauty that our country hides or go for international holiday packages to fly to a foreign land and get drowned in its amazing landscape. With a well-organized tour package like ours, your travel would become a cherished memory.
+				</p>
+				
+				<p id ="para">
+				Those planning for an excursion in India can book Tour and Travel Packages as per their desired location, theme, or type. From the lush green forests, snow-capped mountains and crystal blue seas to historical monuments, colorful cultures, and religious sites, India has something for everyone. For romantic getaways, they can book honeymoon or romantic travel package for destinations like Manali, Ooty, and Kashmir etc. Adventure enthusiasts can look for adventure tour packages for Rishikesh, Auli, McLeodGanj, Leh Ladakh, Goa etc. The beach lovers can go for beach tour packages and choose destinations like Andaman & Nicobar Islands, Goa, Kerala etc.
+				
+				</p>
+				<p id="para">
+				One can also go abroad by booking the best international holiday packages from this travel portal. Here they can find tour packages for top destinations like Europe, Maldives, Bali, Thailand, Singapore, Sri Lanka, Malaysia, Dubai, etc. You can enjoy the spectacular beauty of these foreign lands while the Travel Package providers take care of all your needs like accommodation, travel, sightseeing etc., in your dream country.
+
+				</p>
+				
+				
+				
+			<footer class="footer-section">
+		    <div class="footer">
+			    <div class="rows">
+				    <div class="column">
+					    <h4>About the Site</h4>
+						<ul>
+						    <li><a href="travelpakages.html">Travel Packages</a></li>
+						    <li><a href="location.html">Locations</a></li>
+						    <li><a href="LetsGo.html">Top Attractions</a></li>
+						</ul>
+					</div>
+					<div class="column">
+					    <h4>Get Help</h4>
+						<ul>
+						    <li><a href="signUP.html">Contact Us</a></li>
+						    <li><a href="signIN.html">Sign in</a></li>
+						    <li><a href="PROJECT.html">Log Out</a></li>
+						</ul>
+					</div>
+					<div class="column">
+					    <h4>Follow Us</h4>
+						<ul class="social">
+						    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+						    <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+						    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+						    <a href="https://inkedin.com/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+						</ul>
+					</div>
+					<div class="column">
+					    <h4>Designed by</h4>
+						<p>Amandeep Kaur (2203395)</p>
+						<p>Aashima (2203398)</p>
+					</div>
+				</div>
+			</div>
+			<div class="footer-section">
+			    <p class="center">@copyright All Right Reserved!!! www.PROJECT.com</p>
+			</div>
+		</footer>
+		
+				
+			</div>
+		</section>
+
+</body>
+</html>
